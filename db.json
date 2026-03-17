@@ -1,0 +1,146 @@
+{
+  "inspectors": [
+    {
+      "id": 1,
+      "username": "j.devries",
+      "password": "demo1234",
+      "name": "Jan de Vries",
+      "avatar": "",
+      "theme": "light",
+      "notifications": true,
+      "sounds": true
+    },
+    {
+      "id": 2,
+      "username": "s.bakker",
+      "password": "demo1234",
+      "name": "Sara Bakker",
+      "avatar": "",
+      "theme": "dark",
+      "notifications": true,
+      "sounds": false
+    }
+  ],
+
+  "reports": [
+    {
+      "id": 1,
+      "inspectorId": 1,
+      "address": "Kerkstraat 12, Amsterdam",
+      "date": "2025-04-10",
+      "status": "assigned",
+      "tasks": ["damage", "maintenance"]
+    },
+    {
+      "id": 2,
+      "inspectorId": 1,
+      "address": "Hoflaan 5, Utrecht",
+      "date": "2025-04-08",
+      "status": "completed",
+      "tasks": ["installations", "modifications"]
+    },
+    {
+      "id": 3,
+      "inspectorId": 2,
+      "address": "Molenweg 3, Rotterdam",
+      "date": "2025-04-11",
+      "status": "assigned",
+      "tasks": ["damage", "installations"]
+    }
+  ],
+
+  "damage": [
+    {
+      "id": 1,
+      "reportId": 2,
+      "location": "Woonkamer",
+      "newDamage": true,
+      "type": "slijtage",
+      "date": "2025-04-08",
+      "urgentActionRequired": false,
+      "description": "Beschadigde vloerbedekking bij de schuifpui.",
+      "photos": []
+    },
+    {
+      "id": 2,
+      "reportId": 2,
+      "location": "Badkamer",
+      "newDamage": true,
+      "type": "calamiteit",
+      "date": "2025-04-08",
+      "urgentActionRequired": true,
+      "description": "Waterlekkage door scheur in de betegelde wand.",
+      "photos": []
+    }
+  ],
+
+  "maintenance": [
+    {
+      "id": 1,
+      "reportId": 2,
+      "location": "Buitenkozijnen",
+      "type": "houtrot",
+      "urgentActionRequired": false,
+      "costIndication": "500-1500",
+      "photos": []
+    },
+    {
+      "id": 2,
+      "reportId": 2,
+      "location": "Meterkast",
+      "type": "elektra",
+      "urgentActionRequired": true,
+      "costIndication": "1500+",
+      "photos": []
+    }
+  ],
+
+  "installations": [
+    {
+      "id": 1,
+      "reportId": 2,
+      "location": "CV-ruimte",
+      "type": "verwarming",
+      "reportedMalfunctions": "Ketel slaat regelmatig af bij hoog vermogen.",
+      "testProcedureUrl": "/docs/testprocedure-verwarming.pdf",
+      "approved": false,
+      "comments": "Onderhoud vereist, mogelijk nieuw ontstekingselement.",
+      "photos": []
+    }
+  ],
+
+  "modifications": [
+    {
+      "id": 1,
+      "reportId": 2,
+      "existingDocumentationUrl": "/docs/modificaties-hoflaan5.pdf",
+      "location": "Keuken",
+      "executedBy": "huurder",
+      "description": "Huurder heeft zelf een extra stopcontact geplaatst.",
+      "action": "laten keuren",
+      "comments": "Niet conform NEN 1010, keuring door erkend installateur vereist.",
+      "photos": []
+    }
+  ],
+
+  "documents": [
+    {
+      "id": 1,
+      "title": "NEN 2767 Conditiemeting",
+      "category": "normblad",
+      "url": "/docs/nen2767.pdf"
+    },
+    {
+      "id": 2,
+      "title": "Testprocedure verwarmingsinstallaties",
+      "category": "testprocedure",
+      "url": "/docs/testprocedure-verwarming.pdf"
+    },
+    {
+      "id": 3,
+      "title": "Veiligheidsprotocol brandgevaarlijke situaties",
+      "category": "protocol",
+      "url": "/docs/brandveiligheid.pdf"
+    }
+  ]
+}
