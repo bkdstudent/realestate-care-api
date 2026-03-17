@@ -4,32 +4,6 @@
     { "id": 2, "username": "s.bakker", "password": "demo1234", "name": "Sara Bakker", "theme": "dark" }
   ],
 
-  "reports": [
-    { "id": 1, "inspectorId": 1, "address": "Kerkstraat 12, Amsterdam", "status": "assigned", "date": "2025-04-10" },
-    { "id": 2, "inspectorId": 1, "address": "Hoflaan 5, Utrecht", "status": "completed", "date": "2025-04-08" },
-    { "id": 3, "inspectorId": 2, "address": "Molenweg 3, Rotterdam", "status": "assigned", "date": "2025-04-11" }
-  ],
-
-  "damage": [
-    { "id": 1, "reportId": 2, "location": "Woonkamer", "type": "slijtage", "urgent": false },
-    { "id": 2, "reportId": 2, "location": "Badkamer", "type": "calamiteit", "urgent": true }
-  ],
-
-  "maintenance": [
-    { "id": 1, "reportId": 2, "location": "Buitenkozijnen", "type": "houtrot", "cost": "500-1500" },
-    { "id": 2, "reportId": 2, "location": "Meterkast", "type": "elektra", "cost": "1500+" }
-  ],
-
-  "installations": [
-    { "id": 1, "reportId": 2, "location": "CV-ruimte", "type": "verwarming", "approved": false },
-    { "id": 2, "reportId": 3, "location": "Zekeringkast", "type": "elektra", "approved": true }
-  ],
-
-  "modifications": [
-    { "id": 1, "reportId": 2, "location": "Keuken", "executedBy": "huurder", "action": "laten keuren" },
-    { "id": 2, "reportId": 3, "location": "Tuin", "executedBy": "aannemer", "action": "accepteren" }
-  ],
-
   "documents": [
     { "id": 1, "title": "NEN 2767 Conditiemeting", "category": "normblad" },
     { "id": 2, "title": "Testprocedure verwarming", "category": "testprocedure" },
