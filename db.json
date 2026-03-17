@@ -1,12 +1,27 @@
 {
-  "inspectors": [
-    { "id": 1, "username": "j.devries", "password": "demo1234" },
-    { "id": 2, "username": "s.bakker", "password": "demo1234" }
+    "inspectors": [
+    { "id": 1, "username": "j.devries" },
+    { "id": 2, "username": "s.bakker" }
   ],
-
-  "documents": [
-    { "id": 1, "title": "NEN 2767 Conditiemeting", "category": "normblad" },
-    { "id": 2, "title": "Testprocedure verwarming", "category": "testprocedure" },
-    { "id": 3, "title": "Brandveiligheidsprotocol", "category": "protocol" }
+  "reports": [
+    { "id": 1, "inspectorId": 1, "status": "assigned" },
+    { "id": 2, "inspectorId": 1, "status": "completed" },
+    { "id": 3, "inspectorId": 2, "status": "assigned" }
+  ],
+  "damage": [
+    { "id": 1, "reportId": 2, "type": "slijtage" },
+    { "id": 2, "reportId": 2, "type": "calamiteit" }
+  ],
+  "maintenance": [
+    { "id": 1, "reportId": 2, "type": "houtrot" },
+    { "id": 2, "reportId": 2, "type": "elektra" }
+  ],
+  "installations": [
+    { "id": 1, "reportId": 2, "type": "verwarming" },
+    { "id": 2, "reportId": 3, "type": "elektra" }
+  ],
+  "modifications": [
+    { "id": 1, "reportId": 2, "executedBy": "huurder" },
+    { "id": 2, "reportId": 3, "executedBy": "aannemer" }
   ]
 }
