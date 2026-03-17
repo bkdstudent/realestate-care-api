@@ -1,7 +1,7 @@
 {
   "inspectors": [
-    { "id": 1, "username": "j.devries", "password": "demo1234", "name": "Jan de Vries", "theme": "light" },
-    { "id": 2, "username": "s.bakker", "password": "demo1234", "name": "Sara Bakker", "theme": "dark" }
+    { "id": 1, "username": "j.devries", "password": "demo1234" },
+    { "id": 2, "username": "s.bakker", "password": "demo1234" }
   ],
 
   "documents": [
